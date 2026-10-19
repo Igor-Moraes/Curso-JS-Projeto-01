@@ -1,0 +1,26 @@
+* {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color:#FFFFFF ;
+    --text-color: #111827;
+    --primary-color: #1F2937;
+    --secondary-color: #6B7280;
+    --contrast: #FF5A5F;
+}
+
+body {
+    background-color:var(--background-color);
+    color: var(--text-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}

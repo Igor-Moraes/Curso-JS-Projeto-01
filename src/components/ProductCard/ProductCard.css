@@ -1,0 +1,109 @@
+:root {
+    --background-color:#FFFFFF ;
+    --text-color: #111827;
+    --primary-color: #1F2937;
+    --secondary-color: #6B7280;
+    --contrast: #FF5A5F;
+}
+
+.product-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+    background-color: var(--background-color);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgb( 0, 0, 0 ,0.1);
+    max-width:220px;
+    transition: 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    background-color: #fff;
+    display: block;
+}
+
+.product-info {
+padding: 15px;
+}
+
+.product-category {
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.product-name {
+    color: var(--text-color);
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.product-value {
+    color: #1aaa1a;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.product-description {
+    font-size: 15px;
+}
+
+.add-cart {
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    background-color: var(--background-color);
+    cursor: pointer;
+    position: absolute;
+    z-index: 9999;
+    margin: 5px;
+    transition : 0.3s ease;
+}
+
+.add-cart img {
+    width: 100%;
+    height: 100%;
+    background: none;
+}
+
+.add-cart:hover {
+    background-color: #eeeeee;
+}
+
+@media screen and (max-width : 1020px) {
+    .product-card {
+        width: 80%;
+        margin-top: 15px;
+        width: 180px;
+        border-radius: 10px;
+    }
+    .product-cards {
+        grid-template-columns:  repeat(2, 1fr);
+        gap: 0;
+        gap: 5px;
+    }
+}
