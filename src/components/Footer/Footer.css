@@ -22,6 +22,12 @@
 .page-footer h2 {
     font-size: 2em;
     font-weight: 600;
+    opacity: 0.9;
+    transition:0.3s ease ;
+}
+
+.page-footer h2:hover {
+    opacity: 1;
 }
 
 .return-top {
@@ -30,6 +36,12 @@
     font-size: 18px;
     margin-top: 5px;
     font-weight: 600;
+    opacity: 0.9;
+    transition:0.3s ease;
+}
+
+.return-top:hover {
+    opacity: 1;
 }
 
 .dev {
@@ -38,10 +50,30 @@
     gap: 5px;
     margin-top:5px ;
 }
+.dev a {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    color: var(--background-color);
+    text-decoration: none;
+    opacity: 0.9;
+    transition: 0.3s ease;
+}
+
+.dev a:hover {
+opacity: 1;
+}
+
 
 .devs h3 {
     font-size: 20px;
     font-weight: 600;
+    opacity: 0.9;
+    transition: 0.3s ease;
+}
+
+.devs h3:hover {
+opacity: 1;
 }
 
 .dev img {

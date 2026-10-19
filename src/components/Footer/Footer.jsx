@@ -11,8 +11,7 @@ function Footer() {
             <div className='devs'>
             <h3>Desenvolvedor </h3>
             <div className="dev">
-                <a href="https://www.linkedin.com/in/igor-carvalho-de-moraes-651642352" target='_blank'><img src={linkedin} alt="Icone do linkedin" /></a>
-                <p>Igor Moraes</p>
+                <a href="https://www.linkedin.com/in/igor-carvalho-de-moraes-651642352" target='_blank'><img src={linkedin} alt="Icone do linkedin" /> <p>Igor Moraes</p></a>
             </div>
             </div>
 
